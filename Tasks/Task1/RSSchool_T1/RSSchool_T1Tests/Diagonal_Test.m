@@ -38,6 +38,7 @@
                        @"-10 -8 -5 -2",
                        @"0 9 7 -1",
                        @"4 4 -2 1"];
+    //NSNumber *res = [self.diagonal diagonalDifference:array]; Forget abs()
     XCTAssertTrue([@(1) isEqual: [self.diagonal diagonalDifference:array]]);
 }
 
@@ -45,6 +46,7 @@
     NSArray *array = @[@"11 2 4",
                        @"4 5 6",
                        @"10 8 -12"];
+    //NSNumber *res = [self.diagonal diagonalDifference:array]; The same as well as previous
     XCTAssertTrue([@(15) isEqual: [self.diagonal diagonalDifference:array]]);
 }
 
